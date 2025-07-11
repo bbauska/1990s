@@ -50,7 +50,7 @@ video, iframe {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/Television_static.gif");
+  background-image: url(https://github.com/bbauska/1990s/blob/main/images/Television_static.gif);
   mix-blend-mode: multiply;
   opacity: 0.3;
   animation: glitchMove 0.2s infinite linear;
@@ -95,7 +95,7 @@ canvas {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../images/Television_static.gif");
+  background-image: url(https://github.com/bbauska/1990s/blob/main/images/Television_static.gif);
   background-size: cover;
   opacity: 0;
   z-index: 3;
