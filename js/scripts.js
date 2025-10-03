@@ -1,4 +1,4 @@
-/** js/scripts.js of bbauska/1990s making 1990s.bauska.org */
+/* js/scripts.js of bbauska/1990s making 1990s.bauska.org */
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -102,7 +102,8 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-const videoIds = ["c4CVKbVtTsc", "143aXLat70E", "J5SSsT1O9gE", "dAiomIGB3qo", "lk6iJNSv-vY", "7PgJLyeb6sM", "wz0A7m1euy0", "IiR9uO0Ye1I"];
+const videoIds = ["c4CVKbVtTsc", "143aXLat70E", "J5SSsT1O9gE", "dAiomIGB3qo", "lk6iJNSv-vY", 
+  "7PgJLyeb6sM", "wz0A7m1euy0", "IiR9uO0Ye1I"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
@@ -117,5 +118,5 @@ function switchToNextVideo() {
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 20000); 
+  setTimeout(switchToNextVideo, 25000); 
 });
