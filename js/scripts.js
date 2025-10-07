@@ -17,8 +17,7 @@ class VCREffect {
       miny2: 220,
       num: 70
     }, options);
-
-        this.init();
+    this.init();
   }
 
   init() {
@@ -28,7 +27,6 @@ class VCREffect {
     this.canvas.style.top = "0";
     this.canvas.style.left = "0";
     this.canvas.style.opacity = this.config.opacity;
-
     this.generateVCRNoise();
     window.addEventListener("resize", () => this.onResize());
   }
@@ -117,5 +115,5 @@ function switchToNextVideo() {
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 15000); 
+  setTimeout(switchToNextVideo, 25000); 
 });
