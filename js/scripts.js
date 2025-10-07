@@ -102,8 +102,7 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-const videoIds = ["c4CVKbVtTsc", "143aXLat70E", "J5SSsT1O9gE", "dAiomIGB3qo", "lk6iJNSv-vY", 
-  "7PgJLyeb6sM", "wz0A7m1euy0", "IiR9uO0Ye1I"];
+const videoIds = ["c4CVKbVtTsc", "143aXLat70E", "J5SSsT1O9gE", "dAiomIGB3qo", "lk6iJNSv-vY", "7PgJLyeb6sM", "wz0A7m1euy0", "IiR9uO0Ye1I"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
@@ -112,11 +111,11 @@ function switchToNextVideo() {
   snowEffect.style.opacity = 1;
   setTimeout(() => {
     currentVideoIndex = (currentVideoIndex + 1) % videoIds.length;
-    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=1&mute=1`;
+    iframe.src = `https://www.youtube.com/embed/${videoIds[currentVideoIndex]}?autoplay=1&controls=0&loop=1&mute=0`;
     snowEffect.style.opacity = 0;
   }, 2000); // 2 seconds of static before switching
 }
 
 iframe.addEventListener("load", () => {
-  setTimeout(switchToNextVideo, 25000); 
+  setTimeout(switchToNextVideo, 15000); 
 });
