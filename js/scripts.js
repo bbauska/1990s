@@ -30,7 +30,6 @@ class VCREffect {
     this.generateVCRNoise();
     window.addEventListener("resize", () => this.onResize());
   }
-
   onResize() {
     this.canvas.width = window.innerWidth;
     this.canvas.height = window.innerHeight;
@@ -55,11 +54,9 @@ class VCREffect {
   renderTrackingNoise(radius = 2) {
     const { canvas, ctx, config } = this;
     let { miny, miny2, num } = config;
-
     canvas.style.filter = `blur(${config.blur}px)`;
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = `#fff`;
-
     ctx.beginPath();
     for (let i = 0; i <= num; i++) {
       let x = Math.random() * canvas.width;
@@ -68,7 +65,6 @@ class VCREffect {
       ctx.fillRect(x, y1, radius, radius);
       ctx.fillRect(x, y2, radius, radius);
       ctx.fill();
-
       this.renderTail(ctx, x, y1, radius);
       this.renderTail(ctx, x, y2, radius);
     }
@@ -79,7 +75,6 @@ class VCREffect {
     const n = getRandomInt(1, 50);
     const dirs = [1, -1];
     let dir = dirs[Math.floor(Math.random() * dirs.length)];
-
     for (let i = 0; i < n; i++) {
       let r = getRandomInt(radius - 0.01, radius);
       let dx = getRandomInt(1, 4) * dir;
