@@ -95,7 +95,22 @@ const vcrEffect = new VCREffect(canvas, {
   fps: 60,
   blur: 1
 });
-const videoIds = ["v4-GcS1UQyg", "05cYqdn7YvQ", "sLisEEwYZvw", "izpNuTxGIrM", "U_IOTMu5zDE", "RHTL4vTg2O0", "lk6iJNSv-vY", "yFMaEIHIrGw", "RLxSUKA--Dg", "aPzS3QYb868"];
+
+<!--
+https://www.youtube.com/embed/143aXLat70E?autoplay=1&controls=0&loop=1&mute=1
+Videos: 
+#1. https://youtu.be/v4-GcS1UQyg = x-files (93-02)
+#2. https://youtu.be/05cYqdn7YvQ = boy meets world (93-00)
+#3. https://youtu.be/izpNuTxGIrM = dawson's creek (98-03)
+#4. https://youtu.be/U_IOTMu5zDE = charmed (98-06)
+#5. https://youtu.be/RHTL4vTg2O0 = freeks & geeks (99-00)
+#6. https://youtu.be/lk6iJNSv-vY = buffy the vampire slayer (97-03)
+#7. https://youtu.be/yFMaEIHIrGw = twin peaks (89-91)
+#8. https://youtu.be/RLxSUKA--Dg = the sopranos (99-07)
+#9. https://youtu.be/aPzS3QYb868 = the simpsons (1987-2025+)
+-->
+
+const videoIds = ["v4-GcS1UQyg", "05cYqdn7YvQ", "izpNuTxGIrM", "U_IOTMu5zDE", "RHTL4vTg2O0", "lk6iJNSv-vY", "yFMaEIHIrGw", "RLxSUKA--Dg", "aPzS3QYb868"];
 let currentVideoIndex = 0;
 const iframe = document.getElementById("ytplayer");
 const snowEffect = document.querySelector(".snow-effect");
