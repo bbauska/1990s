@@ -1,6 +1,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~ index.html of bbauska/1990s making 1990s.bauska.org ~~~~~~~~~~~~~~~~~~~~-->
 <head>
   <!-- meta charset, favicon, manifest, themes, shortcut icon -->
@@ -26,11 +27,12 @@
   <meta name="theme-color" content="#7ed917">  <!-- vivid green -->
   <link rel="shortcut icon" type="image/jpg" href="/images/favicon.ico">
 
-  <!-- author, title, description, viewport & robots -->
+  <!-- author, title, description, keywords, viewport & robots -->
   <meta name="author" content="Brian Bauska">
   <meta name="title" content="1990s Nostalgia">
   <meta name="description" content="Decade of the 1990's on television.">
-  <meta name="keywords" content="Silus,Gaming,World,1990,1990s,nostalgia,videos,youtube">
+  <meta name="keywords" content="Silus,Gaming,World,1990,1990s,nostalgia,videos,youtube,silusgw,
+    silusgamingworld,silus-gaming-world">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <meta name=”robots” content="all">
 
@@ -43,15 +45,15 @@
 <body>
 <div class="tv-screen"></div>
 <div class="tv-container">
-    <canvas id="canvas"></canvas>
-    <iframe id="ytplayer" type="text/html" width="540" height="720" 
-      src="https://www.youtube.com/embed/v4-GcS1UQyg?autoplay=1&controls=0&loop=0&mute=1" 
-      alt="YouTube television series videos of the 1980s" 
-      aria-label="YouTube television series videos of the 1980s" 
-      frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
-    </iframe>
-    <div class="glitch"></div>
-    <div class="scan-lines"></div>
+  <canvas id="canvas"></canvas>
+  <iframe id="ytplayer" type="text/html" width="540" height="720" 
+    src="https://www.youtube.com/embed/v4-GcS1UQyg?autoplay=1&controls=0&loop=0&mute=1" 
+    aria-label="YouTube television series videos of the 1980s" 
+    title="YouTube television series videos of the 1980s" 
+    allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen>
+  </iframe>
+  <div class="glitch"></div>
+  <div class="scan-lines"></div>
   <div class="snow-effect"></div>
 </div>
 <script defer src="/js/scripts.js"></script>
