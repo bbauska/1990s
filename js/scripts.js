@@ -96,7 +96,7 @@ const vcrEffect = new VCREffect(canvas, {
   blur: 1
 });
 
-<!--
+/*
 https://www.youtube.com/embed/143aXLat70E?autoplay=1&controls=0&loop=1&mute=1
 Videos: 
 #1. https://youtu.be/v4-GcS1UQyg = x-files (93-02)
@@ -108,7 +108,7 @@ Videos:
 #7. https://youtu.be/yFMaEIHIrGw = twin peaks (89-91)
 #8. https://youtu.be/RLxSUKA--Dg = the sopranos (99-07)
 #9. https://youtu.be/aPzS3QYb868 = the simpsons (1987-2025+)
--->
+*/
 
 const videoIds = ["v4-GcS1UQyg", "05cYqdn7YvQ", "izpNuTxGIrM", "U_IOTMu5zDE", "RHTL4vTg2O0", "lk6iJNSv-vY", "yFMaEIHIrGw", "RLxSUKA--Dg", "aPzS3QYb868"];
 let currentVideoIndex = 0;
